@@ -73,9 +73,9 @@
                                         </div>
                                         <div class="user_info">
                                             {% if thread.first_person == user %}
-                                                    <span>Chat with {{ thread.second_person.username }}</span>
+                                                    <span>{{ thread.second_person.username }}</span>
                                             {% else %}
-                                                <span>Chat with {{ thread.first_person.username }}</span>
+                                                <span>{{ thread.first_person.username }}</span>
                                             {% endif %}
 
                                             <p>{{ thread.chatmessage_thread.all.count }} messages</p>
